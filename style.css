@@ -1,0 +1,534 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+/*
+  Add style rules for the body of a your webpage.
+  Note: These rules will be applied to all elements.
+*/
+body {
+
+    /* Add a background color or image */
+    background-color: #F0EBCE;
+    background-image: url('');
+
+    /* Customize the font, size, and color for text*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: black;
+
+    /* Adjust the padding and margins */
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+
+}
+
+
+
+/*
+  Style Text: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+h1 {
+  color: #395144;
+  text-align: left;
+  font-family:'Times New Roman', Times, serif;
+  background-color: #F0EBCE;
+  
+}
+
+h2 {
+  color:#954535;
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bold;
+  
+
+}
+
+h3 {
+  color:#954535;
+  
+}
+h4{
+  color:black;
+  font-weight: bold;
+  text-align: center;
+  
+}
+p {
+  font-size: 15px;
+  margin: 20px
+  
+}
+
+iframe {
+   display: block;
+   margin: 0 auto;
+}
+
+a:link {
+  color: #EADEB8;
+
+}
+a:visited {
+  color: #A09F57;
+}
+a:hover{
+  color: #AA8B56;
+}
+a:active{
+  color: green;
+}
+button:active {
+  
+    color: green;
+  
+}
+
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #395144;
+  color: #AA8B56;
+}
+/*
+  Style Buttons: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
+
+button {
+  background-color:  #4E6C50;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px 32px;
+  cursor: pointer;
+}
+
+
+
+/* Select and style elements by class name or ID */
+.changing-background {
+  
+  text-align: center;
+  cursor: pointer;
+  font-family: Arial;
+  color:#362706;
+  font-size: 16px;
+  background-color: #94B887;
+}
+
+/* Example: This styles elements with class="header"*/
+.header-container {
+  padding-top: 25px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 40px;
+
+}
+.modalButton {
+  background-color: #bf1029;
+}
+.header-button{
+  background-color: #4E6C50;
+  border: none;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+
+  
+}
+
+#vidText {
+  text-align: center;
+}
+#censorship{
+  margin-left: 50px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  height : 600px;
+}
+
+#infograph{
+  height: 300px;
+  width: 387px;
+}
+#challengeInst{
+  height: 300px;
+  width: 387px;
+}
+
+#challengeInit {
+  height: 300px;
+  width: 387px;
+}
+.imagesClass{
+  display: flex;
+  margin: 20px;
+  
+}
+#stats{
+  margin: 20px;
+  color:#954535;
+}
+.everything {
+  display: flex;
+}
+/* Example: This styles an element with an id="header-img" */
+#interest {
+  background-color: #F2D2BD;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 17px;
+}
+#header-left{
+  
+  width: 20%;
+
+}
+#header-right{
+  margin-right: 70px;
+  margin-left: 100px;
+  width: 20%
+  
+}
+#header-img{
+ 
+  padding-left: 20px;
+  padding-right: 10px;
+  width: 50%;
+  margin: 0px;
+  max-width: 120px;
+  max-height: 100px;
+  text-align: left;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  align-items:stretch;
+
+}
+
+/* Part 1: Navbar */
+
+/* General style rule set for all items in ul */
+.navbar ul {
+    list-style: none;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    width: 100%;
+    margin-bottom: 50
+    
+
+}
+
+/* Style rule set for individual li */
+.navbar ul li {
+    float: right;
+    margin-right: 100px;
+   
+}
+
+
+/* Style rule set for individual li link */
+.navbar ul li a {
+    font-family: Arial;
+    color:#362706;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 0px ;
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+    font-weight: bold;
+    color: #ACB992;
+}
+
+
+
+
+/* Part 2: Flexbox */
+
+/* General style rule set for flex container */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  
+  
+}
+
+
+/* Style rules for flex-item 1 */
+.flex-item:nth-of-type(1) {
+  margin-right: 70px;
+  margin-left: 50px;
+  width: 20%;
+  display: flex; 
+  flex-direction: row-reverse;
+}
+
+/* Style rules for flex-item 2 */
+.flex-item:nth-of-type(2) {
+  width: 30%;
+}
+
+/* Style rules for flex-item 3 */
+.flex-item:nth-of-type(3) {
+
+}
+
+
+/* Style set for all flex-items */
+.flex-item {
+    background: white;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+.petition-container{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.petition-para {
+  width: 55%;
+  padding-right: 10px;
+}
+
+.signatures {
+  width: 45%;
+  padding-right: 10px;
+}
+
+/* Add style to button */
+#theme-button {
+  font-family: Arial;
+  color: #362706;
+  font-size: 16px;
+  text-decoration: underline;
+  display: block;
+  text-align: center;
+  padding: 0px ;
+  width: 150px;
+  border: 2px solid #000;
+}
+#motion-reducer {
+  font-family: Arial;
+  color: #362706;
+  font-size: 16px;
+  text-decoration: underline;
+  display: block;
+  text-align: center;
+  padding: 0px ;
+  width: 150px;
+  border: 2px solid #000;
+}
+
+/* Customize Dark Mode Theme */
+.dark-mode {
+
+background-color: black;
+color: white;
+}
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: #97B68C; /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+#thanks-modal-content {
+  width: 20rem; /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#modalImg{
+  width: 300px;
+  height: 200px;
+}
+
+.history {
+  display: flex;
+  border: 2px solid black;
+  margin: 10px;
+}
+.theProblem{
+  display: flex;
+  margin: 10px;
+}
+.why {
+  display: flex;
+  border: 2px solid black;
+  margin: 10px;
+}
+.theVarioustabs{
+  margin-left: 10px;
+}
+
+
+/* This is for the slideshow */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #B2E1A2 ;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#numBook {
+  width: 300px;
+  height: 300px;
+  position: center;
+}
+#eye {
+  width: 300px;
+  height: 300px;
+  position: center;
+}
+#gender {
+  width: 300px;
+  height: 300px;
+  position: center;
+}
